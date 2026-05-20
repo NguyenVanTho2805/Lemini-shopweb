@@ -1,0 +1,86 @@
+:root {
+  /* Colors - Lavender Dust Palette */
+  --color-primary: #2E1A4A;
+  --color-primary-hover: #3D2560;
+  --color-accent: #9B72CF;
+  --color-accent-light: #C4A8E8;
+  --color-accent-muted: rgba(155, 114, 207, 0.12);
+
+  --color-bg: #FAF8FF;
+  --color-bg-alt: #F3EEFF;
+  --color-bg-soft: #EDE0FF;
+  --color-surface: #FFFFFF;
+
+  --color-border: #EDE0FF;
+  --color-border-subtle: #F5EEFF;
+
+  --color-text: #1A0D2E;
+  --color-text-secondary: #5A3F6F;
+  --color-text-muted: #9B84B3;
+
+  --color-sale: #C44B7A;
+  --color-new: #9B72CF;
+  --color-hot: #2E1A4A;
+
+  /* Typography variables will be injected by Next.js fonts, but we set fallbacks here */
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* Layout & Spacing */
+  --container-max: 1200px;
+  --section-pad-y: 80px;
+  --section-pad-x: 24px;
+  
+  /* Radii */
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(46, 26, 74, 0.06);
+  --shadow-md: 0 4px 12px rgba(46, 26, 74, 0.08);
+  --shadow-lg: 0 12px 32px rgba(46, 26, 74, 0.12);
+
+  /* Animations */
+  --transition-fast: all 0.2s ease;
+  --transition-normal: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Extra colors */
+  --color-primary-light: #3D2560;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --section-pad-y: 48px;
+    --section-pad-x: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+button {
+  font-family: inherit;
+}

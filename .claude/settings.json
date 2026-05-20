@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl http://localhost*)",
+      "Bash(curl https://localhost*)",
+      "Bash(npm run dev*)"
+    ]
+  }
+}
