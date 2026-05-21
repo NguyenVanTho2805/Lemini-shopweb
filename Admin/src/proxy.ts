@@ -3,7 +3,7 @@ import type { NextRequest } from "next/server";
 
 const SESSION_TOKEN = "lemini_admin_2024";
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Allow public routes: login page, auth APIs, and all other API routes (User app calls these)
